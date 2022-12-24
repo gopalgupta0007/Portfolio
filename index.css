@@ -1,0 +1,319 @@
+body {
+    background-image: url('./Images/bgimg.webp');
+    height: auto;
+    margin: 0;
+}
+
+header {
+    height: 10vh;
+}
+
+strong {
+    color: red;
+}
+
+marquee {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    font-size: 2vw;
+    font-weight: bold;
+    opacity: 1;
+    color: red;
+    animation: colorChanging 2s linear infinite;
+}
+
+@keyframes colorChanging {
+    14% {
+        color: red;
+    }
+
+    28% {
+        color: orange;
+    }
+
+    45% {
+        color: yellow;
+    }
+
+    60% {
+        color: green;
+    }
+
+    75% {
+        color: blue;
+    }
+
+    90% {
+        color: indigo;
+    }
+
+    100% {
+        color: violet;
+    }
+}
+
+#nav-bar {
+    max-width: auto;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    margin: 0 30px;
+    justify-content: end;
+    padding: .5vh 0;
+}
+
+#nav-bar>a {
+    margin: 2.1vh 1.2%;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#nav-bar>a:hover {
+    background-color: cyan;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+#logo>img {
+    width: 20vw;
+    height: 8vh;
+    margin: 1%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#logo {
+    cursor: auto;
+}
+
+#nav-bar>a:hover {
+    text-decoration: underline 5px blue;
+}
+
+/* main */
+#container {
+    width: 90vw;
+    height: 30vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /*when image is going out of the this container element so that image is not visible.*/
+    display: flex;
+    box-sizing: border-box;
+}
+
+#text {
+    width: 50vw;
+    height: auto;
+    line-height: 20px;
+    font-size: 30px;
+    padding-top: 5vw;
+}
+
+#name {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+#name:hover {
+    font-size: 105%;
+    text-shadow: 2px -2px cyan;
+}
+
+/* you can take image few pixels above from the bottom. for the border radient color at the bottom of the Image/Photo*/
+#Photo {
+    width: 40vw;
+    height: 30vw;
+    position: relative;
+    padding: 0 -700px;
+}
+
+#Photo>#myPhoto {
+    width: clamp(30vw, 50%, 35vw);
+    height: 29.3vw;
+    object-fit: fill;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+#bottom-gradient {
+    width: 20vw;
+    height: 20px;
+    background: linear-gradient(90deg, red, orange, green, blue, indigo, violet);
+    border-radius: 100vh;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 14.5vw;
+}
+
+#container>#text>button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 2vw;
+    background-color: rgb(174, 255, 255);
+    border-radius: 100vw;
+    margin-left: 1vw;
+    border: 2px solid transparent;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+#container>#text>button:hover {
+    background-color: rgb(0, 255, 255);
+    box-shadow: 0 10px 0 0 black;
+    transform: scale(1.2);
+}
+
+#cards {
+    width: 90vw;
+    height: auto;
+    margin: 1cm auto;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 42vw;
+    height: 10vw;
+    border: 2px solid;
+    font-size: 3vw;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: lightgreen;
+    transform: scale(0.99);
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 0 -1px gray;
+}
+
+.card>div {
+    width: inherit;
+    height: inherit;
+    display: inline;
+    position: relative;
+    top: 20%;
+    left: 7%;
+}
+
+progress {
+    display: block;
+    font-size: 3.6vw;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 15vw;
+    background-color: rgb(30, 30, 30);
+    line-height: 3vw;
+    font-size: 1.2vw;
+    color: gray;
+}
+
+#app-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding-top: 1.5vw;
+}
+
+#app-logo>img {
+    width: 3vw;
+    height: auto;
+    margin-bottom: 1vh;
+    border-radius: 50%;
+    transform: scale(1);
+    transition-property: trnasform;
+    transition-duration: .5s;
+}
+
+#app-logo>img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 5px 0 0 white;
+}
+
+#footer-nav {
+    width: 60vw;
+    height: auto;
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-nav>a {
+    color: gray;
+    text-decoration-style: underline;
+}
+
+#git {
+    text-align: center;
+}
+
+#copyright-text {
+    width: 100%;
+    height: auto;
+    color: gray;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+#copyright-text:hover,
+#footer-nav>a:hover,
+#git:hover {
+    color: white;
+}
+
+
+
+/* when the screen size will be in range(1200px) so that even this lines of code will be excuted */
+@media screen and (max-width: 1200px) {
+    #nav-bar>a {
+        font-size: 2.7vw;
+    }
+
+    #text {
+        padding-top: 4vw;
+        font-size: 2.5vw;
+    }
+
+    footer {
+        height: 20vw;
+    }
+}
+
+
+
+/* when the screen size will be in range(800px) so that even this lines of code will be excuted */
+@media screen and (max-width: 800px) {
+    header {
+        height: 8vh;
+    }
+
+    #logo>img {
+        width: 20vw;
+        height: 7vh;
+        margin-left: 2vw;
+    }
+
+    footer {
+        height: 25vh;
+    }
+}
