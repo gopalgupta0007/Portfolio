@@ -117,6 +117,8 @@ marquee {
     color: blue;
     text-decoration: underline;
     text-decoration-color: green;
+    font-size: 100%;
+    transition: font-size .2s;
 }
 
 #name:hover {
@@ -258,7 +260,7 @@ footer {
 }
 
 #footer-nav>a {
-    color: gray;
+    color: currentcolor;
     text-decoration-style: underline;
 }
 
@@ -266,10 +268,15 @@ footer {
     text-align: center;
 }
 
+#git>a {
+    text-decoration: none;
+    color: currentcolor;
+}
+
 #copyright-text {
     width: 100%;
     height: auto;
-    color: gray;
+    color: currentcolor;
     text-align: center;
     position: relative;
     bottom: 0;
@@ -281,12 +288,36 @@ footer {
     color: white;
 }
 
+/* styling on scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100vh;
+    background-color: #dddddd;
+    opacity: 1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #909090;
+}
+
 
 
 /* when the screen size will be in range(1200px) so that even this lines of code will be excuted */
 @media screen and (max-width: 1200px) {
     #nav-bar>a {
         font-size: 2.7vw;
+    }
+
+    #container {
+        background-color: yellow;
+        height: 32vw;
     }
 
     #text {
