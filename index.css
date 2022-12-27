@@ -1,5 +1,6 @@
 body {
-    background-image: url('./Images/bgimg.webp');
+    font-family: 'Brush Script MT', cursive;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url('./Images/bgimg.webp');
     height: auto;
     margin: 0;
 }
@@ -85,10 +86,6 @@ marquee {
     cursor: pointer;
 }
 
-#logo {
-    cursor: auto;
-}
-
 #nav-bar>a:hover {
     text-decoration: underline 5px blue;
 }
@@ -123,7 +120,8 @@ marquee {
 
 #name:hover {
     font-size: 105%;
-    text-shadow: 2px -2px cyan;
+    text-shadow: 1px -1px black,
+        3px -3px cyan;
 }
 
 /* you can take image few pixels above from the bottom. for the border radient color at the bottom of the Image/Photo*/
@@ -216,14 +214,22 @@ progress {
     font-size: 3.6vw;
 }
 
+section#cards div.card div label b {
+    position: absolute;
+    right: 6vw;
+}
+
 /* footer */
 footer {
     width: 100%;
-    height: 15vw;
+    height: auto;
     background-color: rgb(30, 30, 30);
     line-height: 3vw;
     font-size: 1.2vw;
     color: gray;
+    position: relative;
+    bottom: 0;
+    font-family: none;
 }
 
 #app-logo {
@@ -316,17 +322,12 @@ footer {
     }
 
     #container {
-        background-color: yellow;
         height: 32vw;
     }
 
     #text {
         padding-top: 4vw;
         font-size: 2.5vw;
-    }
-
-    footer {
-        height: 20vw;
     }
 }
 
@@ -340,11 +341,50 @@ footer {
 
     #logo>img {
         width: 20vw;
-        height: 7vh;
-        margin-left: 2vw;
+        height: 5vh;
+        margin: 20px 0 0 3vw;
     }
 
-    footer {
-        height: 25vh;
+    #container {
+        height: auto;
+        flex-direction: column-reverse;
+        padding-bottom: 10px;
     }
+
+    #Photo {
+        width: 100%;
+    }
+
+    #Photo>#myPhoto {
+        max-width: 40%;
+        height: 110%;
+        position: absolute;
+        right: 30%;
+    }
+
+    #bottom-gradient {
+        width: 23vw;
+        height: 2vh;
+        left: 33.5vw;
+        bottom: -25px;
+    }
+
+    #text {
+        width: auto;
+        margin: auto;
+        font-size: 4vw;
+    }
+
+    /* #cards{
+        flex-direction: column;
+    } */
+
+    section#cards div.card div label b {
+        right: 7vw;
+    }
+
+    progress {
+        width: 85%;
+    }
+    
 }
