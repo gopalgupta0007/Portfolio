@@ -183,21 +183,41 @@ marquee {
 }
 
 .card {
-    width: 42vw;
+    width: 40vw;
     height: 10vw;
     border: 2px solid;
     font-size: 3vw;
     border: 2px solid;
     border-radius: 10px;
-    background-color: lightgreen;
     transform: scale(0.99);
     transition-property: transform;
     transition-duration: .3s;
 }
 
+.card:nth-child(1){
+    color: rgb(136, 0, 0);
+    background-color: rgb(255, 125, 125);
+    border-left: 20px solid red;
+}
+.card:nth-child(2){
+    color: rgb(0, 0, 131);
+    background-color: rgb(150, 150, 255);
+    border-left: 20px solid blue;
+}
+.card:nth-child(3){
+    color: green;
+    background-color: greenyellow;
+    border-left: 20px solid green;
+}
+.card:nth-child(4){
+    color: rgb(145, 111, 0);
+    background-color: rgb(255, 255, 124);
+    border-left: 20px solid rgb(231, 170, 0);
+}
+
 .card:hover {
     transform: scale(1.08);
-    box-shadow: 0 15px 0 -1px gray;
+    box-shadow: 0 15px 0 -1px rgb(50, 50, 50);
 }
 
 .card>div {
