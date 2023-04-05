@@ -59,24 +59,31 @@ marquee {
     height: auto;
     list-style-type: none;
     display: flex;
-    margin: 0 30px;
+    margin: 5px 50px;
     justify-content: end;
     padding: .5vh 0;
+    gap: 3vw;
+    font-size: 1.8vw;
 }
 
-#nav-bar>a {
-    margin: 2.1vh 1.2%;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 5px;
+#nav-bar>li{
+    margin-top: 10px;
 }
 
-#nav-bar>a:hover {
-    background-color: cyan;
-    padding: 5px;
-    border: 2px solid transparent;
+#nav-bar>li:nth-child(0){
+    color: blue;
+}
+
+#nav-bar>li>a:hover{
+    background-color: blue;
     border-radius: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 5px;
+    color: #fff;
 }
+
 
 #logo>img {
     width: 20vw;
