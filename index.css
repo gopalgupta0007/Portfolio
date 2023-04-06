@@ -59,29 +59,36 @@ marquee {
     height: auto;
     list-style-type: none;
     display: flex;
-    margin: 5px 50px;
+    margin: 5px 30px;
     justify-content: end;
     padding: .5vh 0;
-    gap: 3vw;
+    gap: 2vw;
     font-size: 1.8vw;
+    line-height: 200%;
+    border-bottom: 2px solid #dedede;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
-#nav-bar>li{
-    margin-top: 10px;
+
+#nav-bar>li>a{
+    padding: 5px 10px;
+    background: transparent;
+    transition: background .5s;
+    color: #000;
 }
 
-#nav-bar>li:nth-child(0){
+#nav-bar>li:nth-child(1){
     color: blue;
 }
 
 #nav-bar>li>a:hover{
-    background-color: blue;
+    color: #fff;
+    background: blue;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: underline;
     text-decoration-color: blue;
-    text-decoration-thickness: 5px;
-    color: #fff;
 }
 
 
@@ -146,6 +153,7 @@ marquee {
     position: absolute;
     right: 0;
     z-index: 2;
+    filter: brightness(1.1);
 }
 
 #bottom-gradient {
