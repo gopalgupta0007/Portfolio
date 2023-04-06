@@ -8,7 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-</head>
+        </head>
 
 <body>
     <!-- navigation-bar -->
@@ -36,41 +36,43 @@
     </header>
     <marquee direction="rtl" scrollamount="20">Portfolio Project</marquee>
     <!-- Main Page -->
-    <div id="container">
-        <div id="text">
-            <h2><strong>My</strong> name is</h2>
-            <h1><strong id="name">Gopal Munib Gupta</strong></h1>
-            <h3>and, i am a <strong>student</strong>.</h3>
-            <button>Resume</button>
-            <button>Content Me</button>
+    <div id="sup-container">
+        <div id="container">
+            <div id="text">
+                <h2><strong>My</strong> name is</h2>
+                <h1><strong id="name">Gopal Munib Gupta</strong></h1>
+                <h3>and, i am a <strong>student</strong>.</h3>
+                <button>Resume</button>
+                <button>Content Me</button>
+            </div>
+            <div id="Photo">
+                <img src="./Images/myPhoto.png" alt="myPhoto" id="myPhoto">
+                <span id="bottom-gradient"></span>
+            </div>
         </div>
-        <div id="Photo">
-            <img src="./Images/myPhoto.png" alt="myPhoto" id="myPhoto">
-            <span id="bottom-gradient"></span>
-        </div>
+        <section id="cards">
+            <div class="card">
+                <div>
+                    <label>HTML <b>90%</b></label><progress id="htmlPro" min="0" max="100" value="90"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label>CSS <b>70%</b></label><progress id="cssPro" min="0" max="100" value="70"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label>JS <b>60%</b></label><progress id="jsPro" min="0" max="100" value="60"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label>REACT <b>40%</b></label><progress id="reactPro" min="0" max="100" value="40">50%</progress>
+                </div>
+            </div>
+        </section>
     </div>
-    <section id="cards">
-        <div class="card">
-            <div>
-                <label>HTML <b>90%</b></label><progress id="htmlPro" min="0" max="100" value="90"></progress>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <label>CSS <b>70%</b></label><progress id="cssPro" min="0" max="100" value="70"></progress>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <label>JS <b>60%</b></label><progress id="jsPro" min="0" max="100" value="60"></progress>
-            </div>
-        </div>
-        <div class="card">
-            <div>
-                <label>REACT <b>40%</b></label><progress id="reactPro" min="0" max="100" value="40">50%</progress>
-            </div>
-        </div>
-    </section>
     <!-- footer -->
     <footer>
         <div id="app-logo">

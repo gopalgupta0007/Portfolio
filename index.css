@@ -83,12 +83,12 @@ marquee {
     color: blue;
 }
 
-#nav-bar>li>a:hover{
+#nav-bar>li>a:hover, #nav-bar>li>a:focus {
     color: #fff;
     background: blue;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    text-decoration-color: blue;
+    text-shadow: 0 -2px 5px yellow;
 }
 
 
