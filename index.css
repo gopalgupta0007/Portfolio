@@ -24,6 +24,7 @@ marquee {
     animation: colorChanging 2s linear infinite;
 }
 
+
 @keyframes colorChanging {
     14% {
         color: red;
@@ -36,7 +37,7 @@ marquee {
     45% {
         color: yellow;
     }
-
+    
     60% {
         color: green;
     }
@@ -53,6 +54,8 @@ marquee {
         color: violet;
     }
 }
+
+a{text-decoration: none;}
 
 #nav-bar {
     max-width: auto;
@@ -79,10 +82,6 @@ marquee {
     color: #000;
 }
 
-#nav-bar>li:nth-child(1){
-    color: blue;
-}
-
 #nav-bar>li>a:hover, #nav-bar>li>a:focus {
     color: #fff;
     background: blue;
@@ -91,6 +90,10 @@ marquee {
     text-shadow: 0 -2px 5px yellow;
 }
 
+#nav-bar>li>a:active{
+    background-color: white;
+    color: cyan;
+}
 
 #logo>img {
     width: 20vw;
@@ -98,10 +101,6 @@ marquee {
     margin: 1%;
     position: absolute;
     cursor: pointer;
-}
-
-#nav-bar>a:hover {
-    text-decoration: underline 5px blue;
 }
 
 /* main */
