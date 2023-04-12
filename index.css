@@ -101,6 +101,8 @@ a{text-decoration: none;}
     margin: 1%;
     position: absolute;
     cursor: pointer;
+    left: 10px;
+    top: 0;
 }
 
 /* main */
@@ -376,13 +378,13 @@ footer {
     #logo>img {
         width: 20vw;
         height: 5vh;
-        margin: 20px 0 0 3vw;
+        margin: 20px 0 0 5vw;
     }
 
     #container {
         height: auto;
         flex-direction: column-reverse;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     #Photo {
