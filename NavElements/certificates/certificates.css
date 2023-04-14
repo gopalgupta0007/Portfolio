@@ -1,0 +1,93 @@
+#C-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.certificates{
+    margin: 0 25px;
+}
+
+.certificate{
+    display: flex;
+    gap: 5vw;
+    text-align: justify;
+}
+
+.bgEffect{
+    height: 450px;
+    width: 350px;
+    position: absolute;
+}   
+
+.textGradiantColor{
+    background-image: linear-gradient(180deg,purple 25%,blue 60%,black 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.certificateImg{
+    width: 22vw;       /* size of the certificate */
+    margin: -35px;
+    border-radius: 10px;
+    border: 50px solid transparent;
+    border-image: url(golden-border.png) 150 stretch;
+    border-image-width: 90px;
+    filter: drop-shadow(0 0 3px rgb(255, 251, 0)) saturate(1);
+}
+.certificate>a{
+    transform: scale(1);
+    transition: .2s transform ease-in;
+    border: 10px solid transparent;
+}
+.certificate>a:hover{
+    transform: scale(1.1);
+    filter: saturate(2);
+}
+.certificate>a:active{
+    filter: brightness(90%);
+}
+.toKnow{
+    font-size: 1.5vw;
+    line-height: 1.5;
+    margin-top: 4%;
+}
+
+@media screen and (max-width: 1200px) {
+    #C-container{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #C-container{
+        max-width: 768px;
+    }
+
+    .certificate{
+        width: 46vw;
+        display: block;
+        margin: auto;
+    }
+
+    .bgEffect{
+        height: 450px;
+        width: 350px;
+        position: absolute;
+    }  
+    
+    .certificateImg{
+        width: 40vw;  
+        border: 50px solid transparent;
+        border-image: url(golden-border.png) 150 stretch;
+        border-image-width: 90px;
+        filter: drop-shadow(0 0 3px rgb(255, 251, 0)) saturate(1);
+    } 
+
+    .toKnow{
+        font-size: 1.5vw;
+        font-weight: bold;
+        margin: 5%;
+        text-indent: 50px;
+    }
+}

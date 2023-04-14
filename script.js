@@ -10,7 +10,7 @@ class Navbar {
         xhttp.onload = function () { 
             document.getElementById("sup-container").innerHTML = this.responseText;
         }
-        xhttp.open("GET", `./NavElements/${url[e-2]}.html`);
+        xhttp.open("GET", `./NavElements/${url[e-2]}/${url[e-2]}.html`);
         console.log(`${url[e-2]}.html`);
         xhttp.send();
     }
