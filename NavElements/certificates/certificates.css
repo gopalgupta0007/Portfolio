@@ -4,32 +4,37 @@
 }
 
 .certificates {
-    margin: 0 25px;
+    margin: -50px 25px 50px;
 }
 
 .certificate {
     display: flex;
-    gap: 5vw;
+    gap: 3vw;
     text-align: justify;
-    margin-bottom: 500px;
 }
 
-.bgEffect {
-    width: 26vw;
-    height: 35vw;
+.bgEffect-V {
+    width: 30vw;
+    height: 39vw;
+    position: absolute;
+    transform: translate(27px, 28px);
+}
+
+.bgEffect-H {
+    width: 30vw;
+    height: 24vw;
     position: absolute;
     transform: translate(27px, 28px);
 }
 
 .textGradiantColor {
-    background-image: linear-gradient(180deg, purple 25%, blue 60%, black 40%);
+    background-image: linear-gradient(180deg, rgb(207, 0, 207) 25%, rgb(24, 24, 255) 60%, black 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .certificateImg {
-    width: 22vw;
-    /* size of the certificate */
+    width: 25vw;    /* size of the certificate */
     border-radius: 10px;
     border: 50px solid transparent;
     border-image: url(golden-border.png) 150 stretch;
@@ -55,19 +60,26 @@
 .toKnow {
     font-size: 1.5vw;
     line-height: 1.5;
-    margin-top: 4%;
     font-weight: bold;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 1200px) {
     #C-container {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: auto;
     }
 
-    .bgEffect {
-        width: 27.3vw;
-        height: 36.3vw;
+    .bgEffect-V {
+        width: 31vw;
+        height: 40vw;
+        position: absolute;
+    }
+    
+    .bgEffect-H {
+        width: 31vw;
+        height: 25vw;
         position: absolute;
     }
 }
@@ -78,32 +90,26 @@
         margin-top: -100px;
     }
 
+    .certificates {
+        margin: 25px 25px 50px;
+    }
+
     .certificate {
         width: inherit;
         display: block;
         text-align: center;
     }
 
-    /* .img {
-        width: 50vw;
-        display: block;
-        margin: auto;
-    } */
-
-    /* .bgEffect {
-        /* width: 46vw;
-        height: 61vw;
+    .bgEffect-V {
+        width: 360px;
         height: 450px;
-        width: 350px;
-        background-color: red;
-        margin: 52px 25vw 0 23vw;
-    } */
-
-    .bgEffect {
-        height: 450px;
-        width: 350px;
-        margin-top: 52px;
-        transform: translate(35px, -17px);
+        position: absolute;
+    }
+    
+    .bgEffect-H {
+        width: 360px;
+        height: 300px;
+        position: absolute;
     }
     .certificateImg {
         width: 300px;
@@ -117,7 +123,7 @@
         font-size: 2vw;
         font-weight: bold;
         text-indent: 50px;
-        margin-top: -8%;
+        margin-top: -5%;
     }
 
     .certificate>a:active {
