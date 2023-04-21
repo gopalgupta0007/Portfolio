@@ -28,7 +28,7 @@
 }
 
 .textGradiantColor {
-    background-image: linear-gradient(180deg, rgb(207, 0, 207) 25%, rgb(24, 24, 255) 60%, black 40%);
+    background-image: linear-gradient(180deg, rgb(207, 0, 207) 35%, rgb(24, 24, 255) 60%, black 30%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
