@@ -1,0 +1,37 @@
+.frame{
+    display: flex;
+    border-radius: 1rem;
+    background-color: #cfffff;
+    overflow: hidden;
+    justify-content:space-between;
+    box-shadow: 0 0 10px black;
+    margin: auto 1rem;
+}
+#details{
+    position: relative;
+    right: 2vw;
+    top: 1rem;
+}
+.frame img{
+    width: 35vw;
+}
+
+#contectMeForm>input, #contectMeForm>textarea{
+    /* min-width: 42vw; */
+    width: 40vw;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(0, 0, 134);
+}
+input, textarea{
+    transform: scale(1);
+    transition: transform .2s;
+}
+input:focus, textarea:focus{
+    content:"first Name";
+    background: rgb(50, 255, 255);
+    border-bottom: 2px solid black;
+    transform: scale(1.05);
+}
