@@ -1,26 +1,34 @@
 .frame{
-    display: flex;
+    width: 1140px;
+    height: 500px;
     border-radius: 1rem;
     background-color: #cfffff;
     overflow: hidden;
-    justify-content:space-between;
     box-shadow: 0 0 10px black;
-    margin: auto 1rem;
+    margin: auto 2rem;
+    display: flex;
+    row-gap: 2vw;
+    justify-content:space-around;
 }
+
+.frame img{
+    width: 500px;
+    position: relative;
+    left: -50px;
+}
+
 #details{
     position: relative;
     right: 2vw;
-    top: 1rem;
+    top: 2rem;
 }
-.frame img{
-    width: 35vw;
+#contectMeForm>textarea{
+    overflow: auto;
 }
-
 #contectMeForm>input, #contectMeForm>textarea{
-    /* min-width: 42vw; */
-    width: 40vw;
+    width: 600px;
     padding: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
     border: none;
     border-radius: 5px;
     border-bottom: 2px solid rgb(0, 0, 134);
@@ -33,5 +41,87 @@ input:focus, textarea:focus{
     content:"first Name";
     background: rgb(50, 255, 255);
     border-bottom: 2px solid black;
+    box-shadow: 0 0 10px #aaa;
     transform: scale(1.05);
+}
+
+button[type=submit]{
+    width: 10vw;
+    display: block;
+    margin: auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: cyan;
+    border-width: 2px;
+    border-style: inset;
+    color: cyan;
+    background-color: black;
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+button[type=submit]:hover{
+    transform: scale(1.2);
+}
+
+button[type=submit]:active{
+    border-style: outset;
+    color: black;
+    border-color: black;
+    background-color: cyan;
+    transform: scale(0.7);
+}
+
+#icons{
+    display: flex;
+    margin: 30px auto;
+    width: 38%;
+    gap: 5vw;
+}
+#icons>i:hover{
+    color:red;
+}
+
+@media screen and (max-width: 1200px) {
+    .frame{
+        width: auto;
+        row-gap: 1vw;
+    }
+
+    .frame img{
+        width: 50vw;
+    }
+
+    #details{
+        flex-shrink: 2;
+        right: 2.7vw;
+    }
+    #contectMeForm>input, #contectMeForm>textarea{
+        width:40vw;
+    }
+    #icons{
+        width: 45%;
+    }
+
+}    
+
+@media screen and (max-width: 800px) {
+    .frame{
+        width: auto;
+        row-gap: 1vw;
+        flex-direction: column;
+    }
+
+    /* .frame img{
+        width: 50vw;
+    } */
+
+    /* #details{
+        flex-shrink: 2;
+        right: 2.7vw;
+    } */
+    /* #contectMeForm>input, #contectMeForm>textarea{
+        width:40vw;
+    } */
 }
