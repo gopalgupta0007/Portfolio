@@ -68,7 +68,7 @@
 @media screen and (max-width: 1200px) {
     .Container {
         max-width: 1100px;
-        margin: auto;
+        margin: -2em auto auto;
     }
 
     .bgEffect-V {
