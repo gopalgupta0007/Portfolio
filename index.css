@@ -116,7 +116,7 @@ nav{
 .Head{
     text-transform: capitalize;
     text-decoration-line:underline;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
     color: transparent;
     animation: colorChanging 5s linear infinite;
@@ -131,13 +131,14 @@ nav{
     /*when image is going out of the this container element so that image is not visible.*/
     display: flex;
     box-sizing: border-box;
+    /* overflow:visible;  while you can hover on my Photo so that the are going to visible completely*/      
 }
 
 #text {
     width: 50vw;
     height: auto;
     line-height: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     padding-top: 5vw;
 }
 
@@ -145,7 +146,6 @@ nav{
     color: blue;
     text-decoration: underline;
     text-decoration-color: green;
-    font-size: 100%;
     transition: font-size .2s;
 }
 
@@ -173,8 +173,13 @@ nav{
     filter: brightness(1.1);
     transform: scale(1);
     border-radius: 50% 50% 10% 10%;
+    cursor: pointer;
+    transition: filter .1s, transform .3s;
 }
-
+#Photo>#myPhoto:hover{
+    transform: scale(1.1);
+    filter: brightness(1.11);
+}
 #bottom-gradient {
     width: 20vw;
     height: 20px;
@@ -282,12 +287,12 @@ section#cards div.card div label b {
 /* footer */
 footer {
     width: 100%;
-    height: auto;
     background-color: rgb(30, 30, 30);
     line-height: 3vw;
     font-size: 1.2vw;
     color: gray;
     position: relative;
+    left: 0;
     bottom: 0;
     font-family: none;
     margin-top: 1rem;

@@ -1,4 +1,6 @@
 
+const myPhoto=()=>document.querySelector("#container").style.overflow = "visible";
+
 class Navbar {
     static navAjax(e) {
         console.log("navAjax started");
@@ -29,7 +31,13 @@ class Navbar {
         Navbar.navAjax(e);
     }
 }
+
+
+
 // -------------------------Main Method---------------------------------------
+
+
+
 function main() {
     console.log("javascript started");
     console.log("javascript ended");
