@@ -1,14 +1,27 @@
+@import url("./NavElements/certificates/certificates.css");
+@import url("./NavElements/services/services.css");
+@import url("./NavElements/contectMe/contectMe.css");
+@import url("./NavElements/about/about.css");
+
+
+
+
+html {
+    font-size: 100%;
+}
+
 body {
-    /* font-family: 'Brush Script MT', cursive; */
     font-family: Arial, sans-serif;
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url('./Images/bgimg.webp');
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('./Images/bgimg.webp'); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Images/bgimg.webp'); dark mode */
+    transition: background-color .5s;
     height: 100vh;
     margin: 0;
 }
 
 header {
-    height: 10vh;
+    width: 100%;
+    height: 4rem;
 }
 
 strong {
@@ -19,7 +32,7 @@ marquee {
     width: 100%;
     height: auto;
     margin-top: 10px;
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-weight: bold;
     opacity: 1;
     color: red;
@@ -38,7 +51,7 @@ marquee {
     45% {
         color: yellow;
     }
-    
+
     60% {
         color: green;
     }
@@ -56,11 +69,13 @@ marquee {
     }
 }
 
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
-nav{
-    width: 100%;
-    height: 4vw;
+nav {
+    width: inherit;
+    height: 4rem;
     background-color: #fff;
     position: fixed;
     border-bottom: 2px solid #dedede;
@@ -69,28 +84,28 @@ nav{
 
 #nav-bar {
     max-width: auto;
-    height: auto;
     list-style-type: none;
     display: flex;
     margin: 5px 30px;
     justify-content: space-between;
     padding: .5vh 0;
     gap: 2vw;
-    font-size: 1.8vw;
+    font-size: 1.8rem;
     line-height: 200%;
     cursor: pointer;
     position: fixed;
     right: 0;
 }
 
-#nav-bar>li>a{
+#nav-bar>li>a {
     padding: 5px 10px;
     background: transparent;
     transition: background .5s, padding .3s;
     color: #000;
 }
 
-#nav-bar>li>a:hover, #nav-bar>li>a:focus {
+#nav-bar>li>a:hover,
+#nav-bar>li>a:focus {
     color: #fff;
     padding: 5px 20px;
     background: blue;
@@ -99,28 +114,29 @@ nav{
     text-shadow: 0 -2px 5px yellow;
 }
 
-#nav-bar>li>a:active{
+#nav-bar>li>a:active {
     background-color: white;
     color: cyan;
 }
 
 #logo>img {
-    width: 20vw;
-    height: 8vh;
+    width: 20%;
+    height: 75%;
     margin: 1%;
     position: absolute;
     cursor: pointer;
     left: 10px;
 }
 
-.Head{
+.Head {
     text-transform: capitalize;
-    text-decoration-line:underline;
+    text-decoration-line: underline;
     font-size: 3rem;
     text-align: center;
     color: transparent;
     animation: colorChanging 5s linear infinite;
 }
+
 /* main */
 #container {
     width: 90vw;
@@ -131,7 +147,6 @@ nav{
     /*when image is going out of the this container element so that image is not visible.*/
     display: flex;
     box-sizing: border-box;
-    /* overflow:visible;  while you can hover on my Photo so that the are going to visible completely*/      
 }
 
 #text {
@@ -168,18 +183,23 @@ nav{
     height: 29.3vw;
     object-fit: fill;
     position: absolute;
+    top: 0;
     right: 0;
     z-index: 2;
     filter: brightness(1.1);
     transform: scale(1);
     border-radius: 50% 50% 10% 10%;
     cursor: pointer;
-    transition: filter .1s, transform .3s;
+    transition: filter .1s, transform .3s, top .5s;
 }
-#Photo>#myPhoto:hover{
+
+#Photo>#myPhoto:hover {
     transform: scale(1.1);
-    filter: brightness(1.11);
+    filter: brightness(1.11) drop-shadow(0px 0px 2px #fff) drop-shadow(0px 0px 10px yellow) drop-shadow(0px 0px 20px rgb(255, 238, 0));
+    position: absolute;
+    top: 1ch;
 }
+
 #bottom-gradient {
     width: 20vw;
     height: 20px;
@@ -195,7 +215,7 @@ nav{
     width: auto;
     height: auto;
     padding: 10px;
-    font-size: 2vw;
+    font-size: 2rem;
     background-color: rgb(174, 255, 255);
     border-radius: 100vw;
     margin-left: 1vw;
@@ -207,7 +227,7 @@ nav{
 #container>#text>button:hover {
     background-color: rgb(0, 255, 255);
     box-shadow: 0 10px 0 0 black;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #container>#text>button:active {
@@ -229,9 +249,9 @@ nav{
 
 .card {
     width: 40vw;
-    height: 10vw;
+    height: 20vmin;
     border: 2px solid;
-    font-size: 3vw;
+    font-size: 3rem;
     border: 2px solid;
     border-radius: 10px;
     transform: scale(0.99);
@@ -239,30 +259,33 @@ nav{
     transition-duration: .3s;
 }
 
-.card:nth-child(1){
+.card:nth-child(1) {
     color: rgb(136, 0, 0);
     background-color: rgb(255, 125, 125);
     border-left: 20px solid red;
 }
-.card:nth-child(2){
+
+.card:nth-child(2) {
     color: rgb(0, 0, 131);
     background-color: rgb(150, 150, 255);
     border-left: 20px solid blue;
 }
-.card:nth-child(3){
+
+.card:nth-child(3) {
     color: green;
     background-color: greenyellow;
     border-left: 20px solid green;
 }
-.card:nth-child(4){
+
+.card:nth-child(4) {
     color: rgb(145, 111, 0);
     background-color: rgb(255, 255, 124);
     border-left: 20px solid rgb(231, 170, 0);
 }
 
 .card:hover {
-    transform: scale(1.08);
-    box-shadow: 0 15px 0 -1px rgb(50, 50, 50);
+    transform: scale(1.05);
+    box-shadow: 0 10px 0 -1px rgb(50, 50, 50);
 }
 
 .card>div {
@@ -271,12 +294,12 @@ nav{
     display: inline;
     position: relative;
     top: 20%;
-    left: 7%;
+    left: 6%;
 }
 
 progress {
     display: block;
-    font-size: 3.6vw;
+    font-size: 3.5vw;
 }
 
 section#cards div.card div label b {
@@ -289,7 +312,7 @@ footer {
     width: 100%;
     background-color: rgb(30, 30, 30);
     line-height: 3vw;
-    font-size: 1.2vw;
+    font-size: 1rem;
     color: gray;
     position: relative;
     left: 0;
@@ -323,7 +346,6 @@ footer {
 
 #footer-nav {
     width: 60vw;
-    height: auto;
     margin: auto;
     text-decoration: none;
     display: flex;
@@ -381,17 +403,56 @@ footer {
 
 /* when the screen size will be in range(1200px) so that even this lines of code will be excuted */
 @media screen and (max-width: 1200px) {
-    #nav-bar>a {
-        font-size: 2.7vw;
+
+    html {
+        font-size: 90%;
     }
 
-    nav{
+    nav {
         width: 100%;
-        height: 4.5vw;
         background-color: #fff;
         position: fixed;
         border-bottom: 2px solid #dedede;
         z-index: 5;
+    }
+
+    #nav-bar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    #nav-bar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    #nav-bar a:hover {
+        color: #f1f1f1;
+    }
+
+    #nav-bar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #sup-container {
+        transition: margin-left .5s;
+        padding: 16px;
     }
 
     #container {
@@ -408,23 +469,17 @@ footer {
 
 /* when the screen size will be in range(800px) so that even this lines of code will be excuted */
 @media screen and (max-width: 800px) {
-    header {
-        height: 8vh;
+    html {
+        font-size: 70%;
     }
 
-    nav{
+    nav {
         width: 100%;
-        height: 5vw;
+        height: 4rem;
         background-color: #fff;
         position: fixed;
         border-bottom: 2px solid #dedede;
         z-index: 5;
-    }
-
-    #logo>img {
-        width: 20vw;
-        height: 5vh;
-        margin: 8px 0 0 5vw;
     }
 
     #container {
@@ -457,6 +512,16 @@ footer {
         font-size: 4vw;
     }
 
+    #cards {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
     section#cards div.card div label b {
         right: 7vw;
     }
@@ -464,8 +529,18 @@ footer {
     progress {
         width: 85%;
     }
-    
-    .Head{
+
+    .Head {
         margin: 110px 0 -30px 0;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    #nav-bar {
+        padding-top: 15px;
+    }
+
+    #nav-bar a {
+        font-size: 18px;
     }
 }

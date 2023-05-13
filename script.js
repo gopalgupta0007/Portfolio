@@ -1,5 +1,8 @@
 
-const myPhoto=()=>document.querySelector("#container").style.overflow = "visible";
+function myPhoto() {
+    document.querySelector("#container").style.overflow = "visible";
+}
+
 
 class Navbar {
     static navAjax(e) {
@@ -16,7 +19,7 @@ class Navbar {
         console.log(`${url[e - 2]}.html`);
         xhttp.send();
     }
-
+    
     static navSelection(e) {
         /*this method is used to manage the style of nav-bar*/
         console.log("navSelection")
@@ -24,11 +27,23 @@ class Navbar {
             document.querySelectorAll("a")[index].removeAttribute("style");
         }
         document.querySelectorAll("a")[e].style.cssText = " color: #fff;\
-                                                            background: blue;\
-                                                            border-radius: 10px;\
-                                                            cursor: pointer;\
-                                                            text-shadow: 0 -2px 5px yellow;";
+        background: blue;\
+        border-radius: 10px;\
+        cursor: pointer;\
+        text-shadow: 0 -2px 5px yellow;";
         Navbar.navAjax(e);
+    }
+    
+    static openNav() {
+        document.getElementById("nav-bar").style.width = "250px";
+        document.getElementById("sup-container").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    static closeNav() {
+        document.getElementById("nav-bar").style.width = "0";
+        document.getElementById("sup-container").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
     }
 }
 

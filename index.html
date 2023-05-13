@@ -7,20 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./NavElements/about/about.css">
-    <link rel="stylesheet" href="./NavElements/certificates/certificates.css">
-    <link rel="stylesheet" href="./NavElements/contectMe/contectMe.css">
-    <link rel="stylesheet" href="./NavElements/services/services.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" -->
     <script src="https://kit.fontawesome.com/b65ff4ff70.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- navigation-bar -->
+    <!-- <div id="super-container"> -->
     <header>
         <nav>
             <a href="" id="logo"><img src="./Images/portfolioImg.png"></a>
             <ul id="nav-bar">
+                <a href="javascript:void(0)" class="closebtn" onclick="Navbar.closeNav()">&times;</a>
                 <li>
                     <a style="
                     color: #fff;
@@ -43,6 +40,8 @@
                     <a onclick="Navbar.navSelection(5)">About Me</a>
                 </li>
             </ul>
+            <span style="font-size:30px;cursor:pointer;position: absolute;right: 0;margin-right: 10px;"
+                    onclick="Navbar.openNav()">&#9776;</span>
         </nav>
     </header>
     <!-- Main Page -->
@@ -104,10 +103,11 @@
             <a onclick="Navbar.navSelection(4)">Contect Me</a>
             <a onclick="Navbar.navSelection(5)">About Me</a>
         </div>
-        <div id="git"><a href="https://github.com/gopalgupta0007/Portfolio"
-            target="_blank"><b>This project is uploaded on GitHub</b></a></div>
+        <div id="git"><a href="https://github.com/gopalgupta0007/Portfolio" target="_blank"><b>This project is
+                    uploaded on GitHub</b></a></div>
         <div id="copyright-text">--Represented By Gopal Gupta</div>
     </footer>
+    <!-- </div> -->
     <script src="./script.js" defer></script>
 </body>
 
