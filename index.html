@@ -6,25 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css"> <!--css file import-->
     <script src="https://kit.fontawesome.com/b65ff4ff70.js" crossorigin="anonymous"></script>
+    <!--import icons from fontawsome-->
 </head>
 
 <body>
-    <!-- navigation-bar -->
-    <!-- <div id="super-container"> -->
     <header>
+        <!-- navigation-bar -->
         <nav>
             <a href="" id="logo"><img src="./Images/portfolioImg.png"></a>
             <ul id="nav-bar">
-                <a href="javascript:void(0)" class="closebtn" onclick="Navbar.closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn iconVisibility" onclick="Navbar.closeNav()">&times;</a>
                 <li>
                     <a style="
-                    color: #fff;
+                    /* color: #fff; */
+                    color: var(--WtoB);
                     background: cyan;
                     border-radius: 5px;
                     cursor: pointer;
-                    text-shadow: 0 -2px 1px #000;
+                    text-shadow: 0 -2px 1px var(--BtoW);
                     " href="index.html" onclick="Navbar.navSelection(1)">Home</a>
                 </li>
                 <li>
@@ -40,11 +41,15 @@
                     <a onclick="Navbar.navSelection(5)">About Me</a>
                 </li>
             </ul>
-            <span style="font-size:30px;cursor:pointer;position: absolute;right: 0;margin-right: 10px;"
-                    onclick="Navbar.openNav()">&#9776;</span>
+            <div id="dark-mode-icon" onclick="changeTheme()">
+                <i class="fa-sharp fa-solid fa-moon fa-beat fa-2xl"></i>
+            </div>
+            <span class="iconVisibility" id="navIcon" onclick="Navbar.openNav()">&#9776;</span>
         </nav>
     </header>
     <!-- Main Page -->
+    <!-- <div id="super-container"> -->
+    <!-- <div id="sup-container"> -->
     <div id="sup-container">
         <marquee direction="rtl" scrollamount="20">Portfolio Project</marquee>
         <div id="container">
@@ -55,8 +60,8 @@
                 <button>Resume</button>
                 <button onclick="Navbar.navSelection(4)">Content Me</button>
             </div>
-            <div id="Photo">
-                <img src="./Images/myPhoto.png" onmouseenter="myPhoto()" alt="myPhoto" id="myPhoto">
+            <div id="Photo" onclick="goToImg()">
+                <img src="./Images/myPhoto.png" target="_blank" onmouseenter="myPhoto()" alt="myPhoto" id="myPhoto">
                 <span id="bottom-gradient"></span>
             </div>
         </div>
@@ -84,7 +89,7 @@
         </section>
     </div>
     <!-- footer -->
-    <footer>
+    <footer id="footer">
         <div id="app-logo">
             <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
                 alt="twitterLogo">

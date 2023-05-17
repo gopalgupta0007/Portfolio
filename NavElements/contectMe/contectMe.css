@@ -4,8 +4,8 @@
     border-radius: 1rem;
     background-color: #cfffff;
     overflow: hidden;
-    box-shadow: 0 0 10px black;
-    margin: auto 2rem;
+    box-shadow: 0 0 10px #000;
+    margin: 2rem auto 3rem;
     display: flex;
     row-gap: 2vw;
     justify-content: space-around;
@@ -84,6 +84,7 @@ button[type=submit]:active {
     margin: 30px auto;
     width: 38%;
     gap: 5vw;
+    animation: Beat 2s linear .1s infinite alternate;
 }
 
 #icons>a>i:hover {color: red !important;}

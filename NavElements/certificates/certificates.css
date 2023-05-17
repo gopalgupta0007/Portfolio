@@ -28,7 +28,9 @@
 }
 
 .textGradiantColor {
-    background-image: linear-gradient(180deg, rgb(207, 0, 207) 35%, rgb(24, 24, 255) 60%, black 30%);
+    background-image: linear-gradient(180deg, rgb(207, 0, 207) 35%, rgb(24, 24, 255) 60%, #000 30%);
+    filter: brightness(150%);
+    /* background-image: linear-gradient(180deg, rgb(207, 0, 207) 35%, rgb(24, 24, 255) 60%, rgb(255,255,255) 5%);     */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -63,6 +65,7 @@
     font-weight: bold;
     text-align: justify;
     word-wrap: break-word;
+    color: var(--BtoW);
 }
 
 @media screen and (max-width: 1200px) {

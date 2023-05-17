@@ -1,0 +1,56 @@
+@keyframes Beat{
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        transform: scale(1.15);
+
+    }
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+@keyframes shadowBeatAnimation {
+    0% {
+        box-shadow: 0 0 10px 2px var(--BtoW);   /**/
+    }
+    50% {
+        box-shadow: 0 0 15px 5px var(--BtoW);   /**/
+    }
+    100% {
+        box-shadow: 0 0 10px 2px var(--BtoW);   /**/
+    }
+}
+
+@keyframes colorChanging {
+    14% {
+        color: red;
+    }
+
+    28% {
+        color: orange;
+    }
+
+    45% {
+        color: yellow;
+    }
+
+    60% {
+        color: green;
+    }
+
+    75% {
+        color: blue;
+    }
+
+    90% {
+        color: indigo;
+    }
+
+    100% {
+        color: violet;
+    }
+}

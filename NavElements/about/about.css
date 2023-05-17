@@ -1,8 +1,7 @@
 /* #Photo2{ */
 .contain{
     height: auto;
-    /* padding: 25px; */
-    /* overflow:visible; */
+    background-color: rgb(255, 255, 200);
 }
 
 #myImg{
