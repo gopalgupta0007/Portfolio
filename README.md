@@ -2,6 +2,6 @@
 
 # deployed url => https://gopalgupta0007.netlify.app/
 
-![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/105534501/235299553-49a79588-e543-41e3-a289-75b87c8558b0.png)
+![gopalgupta0007 netlify app_index html](https://github.com/gopalgupta0007/Portfolio/assets/105534501/32f415e5-7668-4ce3-bfd1-b8d3b5f5d401)
 
 This is my Portfolio. To know about Me, with the help of HTML and CSS.
