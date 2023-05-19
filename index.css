@@ -18,7 +18,8 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url('./Images/bgimg.webp');
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url('./Images/bgimg.webp'); */
+    background-color: red;
     overflow-x: hidden;
     transition: background-color .5s;
     height: 100vh;
