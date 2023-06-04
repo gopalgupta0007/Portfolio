@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="Shortcut Icon" href="./Images/myPhoto.png" type="Images/png">
     <link rel="stylesheet" href="./index.css"> <!--css file import-->
     <script src="https://kit.fontawesome.com/b65ff4ff70.js" crossorigin="anonymous"></script>
     <!--import icons from fontawsome-->
@@ -65,26 +66,55 @@
                 <span id="bottom-gradient"></span>
             </div>
         </div>
-        <section id="cards">
-            <div class="card">
-                <div>
-                    <label>HTML <b>90%</b></label><progress id="htmlPro" min="0" max="100" value="90"></progress>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <label>CSS <b>70%</b></label><progress id="cssPro" min="0" max="100" value="70"></progress>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <label>JS <b>60%</b></label><progress id="jsPro" min="0" max="100" value="60"></progress>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <label>REACT <b>40%</b></label><progress id="reactPro" min="0" max="100" value="40">50%</progress>
-                </div>
+        <!-- project lists -->
+        <section id="container2">
+            <div id="projects-list-container">
+                <ul id="projects-list">
+                    <h1 style="color: black">Projects</h1>
+                    <li class="projects-bar" onmouseenter="projectBarEnter(0)" onmouseleave="projectBarLeave(0)">
+                        <div class="starting-bar">
+                            <img src="./Images/portfolioProjectOverview.png" class="project-image"
+                                alt="portfolio-Overview-Img">
+                            <pre><h1>Portfolio</h1><p>SourceCode on <a href="https://github.com/gopalgupta0007/Portfolio" target="_blank">GitHub</a></p></pre>
+                        </div>
+                        <div class="ending-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                                onclick="manageStarAction(0)">
+                                <path style="fill:none;stroke:var(--BtoW);stroke-width:40;cursor:pointer;"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="projects-bar" onmouseenter="projectBarEnter(1)" onmouseleave="projectBarLeave(1)">
+                        <div class="starting-bar">
+                            <img src="./Images/blueLearnClone.png" class="project-image" alt="blueLearn-Clone-Image">
+                            <pre><h1>Bluelearn-Clone</h1><p>SourceCode on <a href="https://github.com/gopalgupta0007/bluelearn-clone" target="_blank">GitHub</a></p></pre>
+                        </div>
+                        <div class="ending-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                                onclick="manageStarAction(1)">
+                                <path style="fill:none;stroke:var(--BtoW);stroke-width:40;cursor:pointer;"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="projects-bar" onmouseenter="projectBarEnter(2)" onmouseleave="projectBarLeave(2)">
+                        <div class="starting-bar">
+                            <img src="./Images/movie-booking-applicatioin.png" class="project-image"
+                                alt="movie-booking-applicatioin-image">
+                            <pre><h1>Movie-Booking</h1><p>SourceCode on <a href="https://github.com/gopalgupta0007/Movie-Booking-Application" target="_blank">GitHub</a></p></pre>
+                        </div>
+                        <div class="ending-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                                onclick="manageStarAction(2)">
+                                <path style="fill:none;stroke:var(--BtoW);stroke-width:40;cursor:pointer;"
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                        </div>
+                    </li>
+                    <!-- <li></li>
+                    <li></li> -->
+                </ul>
             </div>
         </section>
     </div>

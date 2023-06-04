@@ -2,6 +2,19 @@ let a = 0;
 var root = document.querySelector(':root');
 var footer = document.getElementById("footer");
 
+function projectBarEnter(n) {
+    const image = document.querySelectorAll('.project-image')[n];
+    image.style.transform = "scale(1.1)";
+}
+function projectBarLeave(n) {
+    const image = document.querySelectorAll('.project-image')[n];
+    image.style.transform = "scale(1)";
+}
+function manageStarAction(num) {
+    const svg = document.querySelectorAll('svg')[num];
+    const path = svg.querySelector('path');
+    path.style.fill =(++a%2!=0) ?"rgb(255, 196, 0)":"none";
+}
 function myPhoto() {
     document.querySelector("#container").style.overflow = "visible";
 }

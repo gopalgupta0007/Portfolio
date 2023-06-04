@@ -1,0 +1,70 @@
+#cards {
+    width: 90vw;
+    height: auto;
+    margin: 1cm auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 40vw;
+    height: 20vmin;
+    border: 2px solid;
+    font-size: 3rem;
+    border: 2px solid;
+    border-radius: 10px;
+    transform: scale(0.99);
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.card:nth-child(1) {
+    color: rgb(136, 0, 0);
+    background-color: rgb(255, 125, 125);
+    border-left: 20px solid red;
+}
+
+.card:nth-child(2) {
+    color: rgb(0, 0, 131);
+    background-color: rgb(45, 143, 255);
+    border-left: 20px solid rgb(0, 4, 255);
+}
+
+.card:nth-child(3) {
+    color: green;
+    background-color: greenyellow;
+    border-left: 20px solid green;
+}
+
+.card:nth-child(4) {
+    color: rgb(145, 111, 0);
+    background-color: rgb(255, 255, 124);
+    border-left: 20px solid rgb(231, 170, 0);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 0 -1px rgb(200, 200, 200);
+}
+
+.card>div {
+    width: inherit;
+    height: inherit;
+    display: inline;
+    position: relative;
+    top: 20%;
+    left: 6%;
+}
+
+progress {
+    display: block;
+    font-size: 3.5vw;
+}
+
+section#cards div.card div label b {
+    position: absolute;
+    right: 6vw;
+}
