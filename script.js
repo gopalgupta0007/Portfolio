@@ -5,39 +5,57 @@ var footer = document.getElementById("footer");
 function projectBarEnter(n) {
     const image = document.querySelectorAll('.project-image')[n];
     image.style.transform = "scale(1.1)";
+    image.style.filter = "brightness(110%)";
 }
+
+
 function projectBarLeave(n) {
     const image = document.querySelectorAll('.project-image')[n];
     image.style.transform = "scale(1)";
+    image.style.filter = "brightness(100%)";
 }
-function manageStarAction(num) {
+
+
+function goToPath(path) {
+    console.log("goToPath")
+    window.location.href = "https://" + path;
+}
+
+
+function manageStarAction(event, num) {
+    event.stopImmediatePropagation()
     const svg = document.querySelectorAll('svg')[num];
     const path = svg.querySelector('path');
-    path.style.fill =(++a%2!=0) ?"rgb(255, 196, 0)":"none";
+    path.style.fill = (++a % 2 != 0) ? "rgb(255, 196, 0)" : "none";
 }
+
+
 function myPhoto() {
     document.querySelector("#container").style.overflow = "visible";
 }
-function goToImg(){
-    document.location.href="https://raw.githubusercontent.com/gopalgupta0007/Portfolio/main/Images/myPhoto.png";
+
+
+function goToImg() {
+    document.location.href = "https://raw.githubusercontent.com/gopalgupta0007/Portfolio/main/Images/myPhoto.png";
 }
+
+
 function changeTheme() {
-    a = a+1;
-    if (a%2!==0) {
-        console.log(a);
+    if (++a % 2 !== 0) {
         document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Images/bgimg.webp')";
         footer.style.backgroundColor = "rgb(222,222,222)";
-        root.style.setProperty('--BtoW','#fff') 
-        root.style.setProperty('--WtoB','#000') 
+        root.style.setProperty('--BtoW', '#fff');
+        root.style.setProperty('--WtoB', '#000');
         // dark mode
     } else {
         document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url('./Images/bgimg.webp')";
-        footer.style.backgroundColor = "rgb(30,30,30)"; 
-        root.style.setProperty('--BtoW','#000') 
-        root.style.setProperty('--WtoB','#fff') 
+        footer.style.backgroundColor = "rgb(30,30,30)";
+        root.style.setProperty('--BtoW', '#000');
+        root.style.setProperty('--WtoB', '#fff');
         // light mode
     }
 }
+
 
 class Navbar {
     static navAjax(e) {
@@ -57,28 +75,28 @@ class Navbar {
         console.log(`${url[e]}.html`);
         xhttp.send();
     }
-    
+
     static navSelection(e) {
         /*this method is used to manage the style of nav-bar*/
         console.log(`navSelection ${e}`)
         for (let index = 1; index <= 6; index++) {
             document.querySelectorAll("a")[index].removeAttribute("style");
         }
-        document.querySelectorAll("a")[e+1].style.cssText = " color: #fff;\
+        document.querySelectorAll("a")[e + 1].style.cssText = " color: #fff;\
         background: var(--blueToGray);\
         border-radius: 10px;\
         cursor: pointer;\
         text-shadow: 0 -2px 5px yellow;";
-        Navbar.navAjax(e-2);
+        Navbar.navAjax(e - 2);
     }
-    
+
     static openNav() {
         document.getElementById("nav-bar").style.width = "250px";
         document.getElementById("sup-container").style.marginLeft = "250px";
         document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
-        document.getElementsByTagName('nav').style.backgroundColor="rgba(0,0,0,0.)";
+        document.getElementsByTagName('nav').style.backgroundColor = "rgba(0,0,0,0.)";
     }
-    
+
     static closeNav() {
         document.getElementById("nav-bar").style.width = "0";
         document.getElementById("sup-container").style.marginLeft = "0";

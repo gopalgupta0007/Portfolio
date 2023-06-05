@@ -144,7 +144,6 @@ nav {
     height: 30vw;
     margin: 0 auto;
     position: relative;
-    /* overflow: hidden; */
     /*when image is going out of the this container element so that image is not visible.*/
     display: flex;
     box-sizing: border-box;
@@ -277,7 +276,9 @@ nav {
 
 .projects-bar:hover {
     background-color: #aaa;
+    cursor: pointer;
 }
+
 
 .starting-bar {
     display: flex;
