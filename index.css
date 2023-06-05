@@ -568,6 +568,10 @@ footer {
         width: 100%;
     }
 
+    #summary{
+        margin-right:0;
+    }
+
     section#cards div.card div label b {
         right: 7vw;
     }
