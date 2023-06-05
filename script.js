@@ -60,7 +60,7 @@ function changeTheme() {
 class Navbar {
     static navAjax(e) {
         console.log("navAjax started");
-        let url = ["certificates", "services", "contectMe", "about"]
+        let url = ["certificates", "services", "contactMe", "about"]
         const xhttp = new XMLHttpRequest();
 
         xhttp.onprogress = function () {
