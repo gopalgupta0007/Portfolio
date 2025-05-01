@@ -1,30 +1,303 @@
-<div class="Container">
-    <h1 class="Head">Services</h1>
-    <section id="cards">
-        <div class="card">
-            <div>
-                <label>HTML <b>90%</b></label><progress id="htmlPro" min="0" max="100" value="90"></progress>
+<!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900">My <span class="text-primary">Services</span></h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">I offer a range of development services backed by solid programming skills and deployment expertise. Here's what I can do for you.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">What I <span class="text-primary">Offer</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Web Development Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-2 bg-primary"></div>
+                    <div class="p-6">
+                        <div class="rounded-full bg-primary bg-opacity-10 w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-laptop-code text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                        <p class="text-slate-600">Creating responsive, modern websites with clean code and optimal performance.</p>
+                    </div>
+                </div>
+
+                <!-- Frontend Development Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-2 bg-primary"></div>
+                    <div class="p-6">
+                        <div class="rounded-full bg-primary bg-opacity-10 w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Frontend Development</h3>
+                        <p class="text-slate-600">Building interactive user interfaces with modern frameworks and libraries.</p>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-2 bg-primary"></div>
+                    <div class="p-6">
+                        <div class="rounded-full bg-primary bg-opacity-10 w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-paint-brush text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                        <p class="text-slate-600">Designing intuitive, aesthetically pleasing interfaces that enhance user experience.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div>
-                <label>CSS <b>70%</b></label><progress id="cssPro" min="0" max="100" value="70"></progress>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">My <span class="text-primary">Skills</span></h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Programming Languages Column -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-slate-800">Programming Languages</h3>
+                        
+                        <!-- HTML -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">HTML</span>
+                                <span class="text-primary font-medium">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- CSS -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">CSS/Tailwind</span>
+                                <span class="text-primary font-medium">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- JavaScript -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">JavaScript</span>
+                                <span class="text-primary font-medium">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- React -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">React</span>
+                                <span class="text-primary font-medium">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Other Skills Column -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-slate-800">Other Skills</h3>
+                        
+                        <!-- Node.js -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Node.js</span>
+                                <span class="text-primary font-medium">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Git/GitHub -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Git/GitHub</span>
+                                <span class="text-primary font-medium">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Responsive Design -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Responsive Design</span>
+                                <span class="text-primary font-medium">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Problem Solving -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Problem Solving</span>
+                                <span class="text-primary font-medium">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div>
-                <label>JS <b>60%</b></label><progress id="jsPro" min="0" max="100" value="60"></progress>
+        </section>
+
+        <!-- Project Showcase Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Featured <span class="text-primary">Projects</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Project -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 bg-slate-200">
+                        <img src="./Images/portfolioProjectOverview.png" alt="Portfolio Project" class="w-full h-full object-cover">
+                        <div class="absolute top-0 right-0 bg-primary text-white px-3 py-1 rounded-bl-lg">Portfolio</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Personal Portfolio</h3>
+                        <p class="text-slate-600 mb-4">A responsive portfolio website showcasing my projects and skills.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">HTML</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">CSS</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/gopalgupta0007/Portfolio.git" target="_blank" class="inline-block text-primary hover:underline">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Bluelearn Clone Project -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 bg-slate-200">
+                        <img src="./Images/blueLearnClone.png" alt="Bluelearn Clone" class="w-full h-full object-cover">
+                        <div class="absolute top-0 right-0 bg-primary text-white px-3 py-1 rounded-bl-lg">Clone</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Bluelearn Clone</h3>
+                        <p class="text-slate-600 mb-4">A pixel-perfect clone of the Bluelearn platform with responsive design.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">HTML</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">CSS</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/gopalgupta0007/bluelearn-clone.git" target="_blank" class="inline-block text-primary hover:underline">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Movie Booking Project -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 bg-slate-200">
+                        <img src="./Images/movie-booking-applicatioin.png" alt="Movie Booking App" class="w-full h-full object-cover">
+                        <div class="absolute top-0 right-0 bg-primary text-white px-3 py-1 rounded-bl-lg">Web App</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Movie Booking App</h3>
+                        <p class="text-slate-600 mb-4">An interactive movie ticket booking application with seat selection.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">HTML</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">CSS</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded-md text-sm">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/gopalgupta0007/Movie-Booking-Application.git" target="_blank" class="inline-block text-primary hover:underline">View on GitHub →</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div>
-                <label>BOOTSTRAP<b>50%</b></label><progress id="jsPro" min="0" max="100" value="60"></progress>
+            
+            <div class="text-center mt-8">
+                <a href="#" class="inline-block bg-primary text-white px-6 py-3 rounded-md shadow-md hover:bg-cyan-600 transition-colors">View All Projects</a>
             </div>
-        </div>
-        <div class="card">
-            <div>
-                <label>REACT <b>40%</b></label><progress id="reactPro" min="0" max="100" value="40"></progress>
+        </section>
+
+        <!-- Deployment Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Deployment <span class="text-primary">Expertise</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Netlify Card -->
+                <div class="deployment-card bg-white rounded-lg shadow-lg p-6 flex items-center">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full mr-6">
+                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#06b6d4">
+                            <path d="M16.934 8.519a1.044 1.044 0 0 1 .303.23l2.349-1.045-2.192-2.171-.491 2.954zM12.06 6.546a1.305 1.305 0 0 1 .209.574l3.497 1.482a1.044 1.044 0 0 1 .355-.177l.574-3.55-2.13-2.234-2.505 3.852v.053zm11.933 5.491l-3.748-3.748-2.548 1.044 6.264 2.662s.053.042.032.042zm-.627.606l-6.013-2.569a1.044 1.044 0 0 1-.7.407l-.647 3.957a1.044 1.044 0 0 1 .303.731l3.633.762 3.33-3.31v-.062zM15.4 9.25l-3.268-1.39a1.2 1.2 0 0 1-1.044.543h-.199l-2.512 3.95a1.044 1.044 0 0 1 .408.626l5.88 1.243a1.044 1.044 0 0 1 .824-.62l.062-.2zm3.02 11.683H5.441l-.584 1.105h14.566l-.418-1.105zm1.834-1.105l-6.255-14.328h-3.572l-6.148 14.328h15.975z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Netlify Deployment</h3>
+                        <p class="text-slate-600">Expert in continuous deployment with Netlify, including custom domains, form handling, and serverless functions.</p>
+                        <ul class="mt-3 space-y-1">
+                            <li class="flex items-center text-slate-700">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Continuous Deployment
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Custom Domain Integration
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                SSL Certificates
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Vercel Card -->
+                <div class="deployment-card bg-white rounded-lg shadow-lg p-6 flex items-center">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full mr-6">
+                        <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 19.7778H22L12 2Z" fill="#06b6d4"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Vercel Deployment</h3>
+                        <p class="text-slate-600">Proficient in Vercel deployment for frontend applications, leveraging edge functions and serverless backend services.</p>
+                        <ul class="mt-3 space-y-1">
+                            <li class="flex items-center text-slate-700">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Preview Deployments
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                CI/CD Integration
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Environment Configuration
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-primary rounded-lg shadow-lg p-10 text-white text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to work together?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Let's collaborate on your next project. I'm available for freelance work and open to new opportunities.</p>
+            <a href="#" class="inline-block bg-white text-primary font-medium px-8 py-3 rounded-md shadow-md hover:bg-gray-100 transition-colors">Contact Me</a>
+        </section>
+    </main>
