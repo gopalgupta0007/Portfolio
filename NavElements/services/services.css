@@ -1,4 +1,4 @@
-:root {
+/* :root {
             --primary: #06b6d4;
             --secondary: #1e293b;
             --dark: #0f172a;
@@ -18,7 +18,7 @@
             background-color: var(--light);
             color: var(--secondary);
             line-height: 1.6;
-        }
+        } */
         
         .container {
             max-width: 1200px;
