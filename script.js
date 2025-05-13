@@ -39,7 +39,7 @@ function goToImg() {
     document.location.href = "https://raw.githubusercontent.com/gopalgupta0007/Portfolio/main/Images/myPhoto.png";
 }
 
-const handleDownload = () => {
+function handleDownload {
     const link = document.createElement('a');
     link.href = 'https://github.com/user-attachments/files/20189496/gopal.resume.1.pdf'; // Path relative to public folder
     link.download = 'https://github.com/user-attachments/files/20189496/gopal.resume.1.pdf'; // This is the name that will be used to download
